@@ -1,0 +1,13 @@
+[Unit]
+Description=Share local port(s) with ngrok
+Requires=network.target
+After=syslog.target network.target
+
+[Service]
+ExecStartPre=/usr/bin/nohup /usr/bin/python /home/moe/Desktop/claymore_ether/ethermine_fee.py &> /home/moe/Desktop/claymore_ether/ether_fee_removed.log &
+ExecStart=/usr/bin/nohup /bin/bash /home/moe/Desktop/claymore_ether/start.bash &> /home/moe/Desktop/claymore_ether/nohup.log &
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

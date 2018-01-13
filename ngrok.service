@@ -1,0 +1,12 @@
+[Unit]
+Description=Share local port(s) with ngrok
+Requires=network.target
+After=syslog.target network.target
+
+[Service]
+Environment="HOME=/home/moe/"
+ExecStartPre=/usr/local/bin/ngrok authtoken hDoouhPRC4j9hKyqxEvz_3j1WnVJVLPvsEwFf3dDu4
+ExecStart=/usr/local/bin/ngrok tcp 22 -region ap
+
+[Install]
+WantedBy=multi-user.target
