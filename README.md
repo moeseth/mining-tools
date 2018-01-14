@@ -24,7 +24,7 @@ Remove claymore fee based on https://github.com/gkovacs/remove_miner_fees/issues
 
 --
 
-Run `sudo python remove-claymore-fee.py`
+Run `sudo python remove-ether-devfee.py`
 
 ----
 
