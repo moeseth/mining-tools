@@ -33,3 +33,13 @@ Tips
 - Use `ngrok` for ssh tunneling
 
 - Use windows to bio mods GPU and then install on Linux (PolarisBiosEditor, GPU-Z, AtiFlash)
+
+### Bios Mod on window
+
+1. Use GPU-Z to save original.rom
+2. Use [PolarisBiosEditor](https://github.com/jaschaknack/PolarisBiosEditor/blob/master/notice) to patch time and clock setting
+3. Use `AtiWinFlash.exe` to re-program all the cards.
+4. Reboot
+
+
+
