@@ -1,6 +1,7 @@
 # based on:
 # https://stackoverflow.com/questions/27293924/change-tcp-payload-with-nfqueue-scapy?rq=1
 # https://github.com/DanMcInerney/cookiejack/blob/master/cookiejack.py
+# made for ethermine.org
 
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
