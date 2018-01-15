@@ -20,11 +20,11 @@ Miners
 
 Remove claymore fee based on https://github.com/gkovacs/remove_miner_fees/issues/9
 
-#### Change `port` in `remove-claymore-fee.py` if required
+#### Change `port` in `remove_ether_devfee.py` if required
 
 --
 
-Run `sudo python remove-ether-devfee.py`
+Run `sudo python remove_ether_devfee.py`
 
 ----
 
