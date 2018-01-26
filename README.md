@@ -12,19 +12,16 @@ For AMD GPU, install
 
 Miners
 
-- [https://github.com/nanopool/Claymore-Dual-Miner](https://github.com/nanopool/Claymore-Dual-Miner)
+- [https://bitcointalk.org/index.php?topic=1433925.0](https://bitcointalk.org/index.php?topic=1433925.0)
 
-- [https://github.com/nanopool/Claymore-XMR-Miner/releases](https://github.com/nanopool/Claymore-XMR-Miner/releases)
+- [https://bitcointalk.org/index.php?topic=638915.0](https://bitcointalk.org/index.php?topic=638915.0)
 
 ---
 
 Remove claymore fee based on https://github.com/gkovacs/remove_miner_fees/issues/9
-
-#### Change `port` in `remove_ether_devfee.py` if required
-
 --
 
-Run `sudo python remove_ether_devfee.py`
+Run `sudo python noethfee.py`
 
 ----
 
@@ -41,5 +38,10 @@ Tips
 3. Use `AtiWinFlash.exe` to re-program all the cards.
 4. Reboot
 
+
+### Autorun on boot
+
+1. make sure home encryption is disabled
+2. set up `ether.service`
 
 
