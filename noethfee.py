@@ -30,12 +30,6 @@ def callback(arg1, payload):
 
     if 'submitLogin' in payload_text:
         if my_eth_address not in payload_text:
-            devfee_address = "%s.devfee" % (my_eth_address)
-
-            ## replace miner name
-            payload_text = re.sub(r'0x.{40}\.(\w+)', devfee_address, payload_text)
-
-            ## replace if no miner name
             payload_text = re.sub(r'0x.{40}', my_eth_address, payload_text)
 
             print "%s: Replaced DevFee -> " % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
