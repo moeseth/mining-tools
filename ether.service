@@ -4,7 +4,6 @@ Requires=network.target
 After=syslog.target network.target
 
 [Service]
-ExecStartPre=/usr/bin/amdcovc fanspeed:0,1,2,3,4,5=70
 ExecStart=/bin/bash /home/moe/Desktop/claymore_ether/start.bash &
 
 [Install]
