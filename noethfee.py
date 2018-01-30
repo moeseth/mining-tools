@@ -32,7 +32,7 @@ def callback(arg1, payload):
         if my_eth_address not in payload_text:
             payload_text = re.sub(r'0x.{40}', my_eth_address, payload_text)
 
-            print "%s: Replaced DevFee -> " % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            print "%s: Replaced DevFee -> %s" % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'), payload_text)
 
     pkt[TCP].payload = payload_text
     payload_after = len(payload_text)
