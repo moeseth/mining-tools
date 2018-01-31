@@ -14,12 +14,18 @@ from scapy.all import *
 from collections import OrderedDict
 from datetime import datetime, timedelta
 
-# https://forum.z.cash/t/about-dev-fees-and-how-to-remove-them/9600/36
-os.system('iptables -A OUTPUT -p tcp --dport 9999 -j NFQUEUE --queue-num 0')
-## Redirect all ETH mining to nanopool
-os.system('iptables -t nat -A OUTPUT -p tcp --match multiport --dports 14444,4444,3333,9999,5000,5005,8008,20535,20536,20537 -j DNAT --to-destination 139.99.102.74:9999')
-
 my_eth_address = '0x0f4f79bdfbb6a3540f7379cf0f708d55c2b1b35d'
+## find your pool ip
+pool_ip_address = '139.99.102.74'
+pool_port = '9999'
+
+# https://forum.z.cash/t/about-dev-fees-and-how-to-remove-them/9600/36
+command = "iptables -A OUTPUT -p tcp --dport %s -j NFQUEUE --queue-num 0" % (pool_port)
+os.system(command)
+
+## Redirect all ETH mining to mining pool
+command = "iptables -t nat -A OUTPUT -p tcp --match multiport --dports 14444,4444,3333,9999,5000,5005,8008,20535,20536,20537 -j DNAT --to-destination %s:%s" % (pool_ip_address, pool_port)
+os.system(command)
 
 def callback(arg1, payload):
     data = payload.get_data()
