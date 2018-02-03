@@ -12,9 +12,11 @@ For AMD GPU, install
 
 Miners
 
-- [https://bitcointalk.org/index.php?topic=1433925.0](https://bitcointalk.org/index.php?topic=1433925.0)
+- Claymore Dual Miner - [https://bitcointalk.org/index.php?topic=1433925.0](https://bitcointalk.org/index.php?topic=1433925.0)
 
-- [https://bitcointalk.org/index.php?topic=638915.0](https://bitcointalk.org/index.php?topic=638915.0)
+- Claymore Cryptonight [https://bitcointalk.org/index.php?topic=638915.0](https://bitcointalk.org/index.php?topic=638915.0)
+
+- PhoenixMiner [https://bitcointalk.org/index.php?topic=2647654.0](https://bitcointalk.org/index.php?topic=2647654.0)
 
 ---
 
