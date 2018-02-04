@@ -58,12 +58,16 @@ if coin_name in ("Pirl", "Ellaism", "Ethereum", "Electroneum"):
         os.system("systemctl stop ether")
 
         if coin_name == "Pirl":
+            print "running pirl"
             os.system("nohup bash /home/moe/Desktop/claymore_ether/start_pirl.bash &")
-        elif coin_info == "Ellaism":
+        elif coin_name == "Ellaism":
+            print "running ella"
             os.system("nohup bash /home/moe/Desktop/claymore_ether/start_ella.bash &")
-        elif coin_info == "Ethereum":
+        elif coin_name == "Ethereum":
+            print "running eth"
             os.system("nohup bash /home/moe/Desktop/claymore_ether/start.bash &")
-        elif coin_info == "Electroneum":
+        elif coin_name == "Electroneum":
+            print "running etn"
             os.system("nohup sh /home/moe/Desktop/cryptonote/start_etn.sh &")
     else:
         print "already running"
